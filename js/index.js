@@ -10,6 +10,14 @@ $("#downButton").live("click",function() {
 
 $("#leftButton").live("click",function() {
     alert(' Left Button has been clicked');
+
+    $.ajax({
+        //The URL to process the request
+        'url' : '/motoron',
+        //The type of request, also known as the "method" in HTML forms
+        //Can be 'GET' or 'POST'
+        'type' : 'GET'
+    });
 })
 
 $("#rightButton").live("click",function() {
@@ -18,5 +26,13 @@ $("#rightButton").live("click",function() {
 
 $("#fireButton").live("click",function() {
     alert(' Fire Button has been clicked');
+
+    $.ajax({
+        //The URL to process the request
+        'url' : '/fire',
+        //The type of request, also known as the "method" in HTML forms
+        //Can be 'GET' or 'POST'
+        'type' : 'GET'
+    });
 })
 
