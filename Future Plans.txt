@@ -1,0 +1,19 @@
+
+
+Future Plans:
+
+1. Create a login screen so only one person can use the app at a time
+
+2. Create a way to save fire coordinates so that you could hit a button and the missile launcher would go back to the same spot.
+
+	-Have a create new coordinate button.  
+	-Enter a name for the coordinate
+	-Have the launcher move all the way left and down
+	-Start Recording Button
+	-Record right and up movements
+	-Save button
+	-When the user clicks on a save coordinate the launcher 	will move all the way left and down and then move the 	recorded up and right moves.
+
+3. Keep track of how many missiles you have left
+
+4. Fire should only fire one missile at a time
