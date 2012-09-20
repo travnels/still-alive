@@ -4,19 +4,19 @@ var express = require('express'),
     board = new five.Board();
 
 var app = express();
-var led;
+var motor;
 board.on("ready", function() {
-    led = new five.Led(13);
-    util.debug('LED init');
+    motor = new five.Motor(9);
+    util.debug('Motor init');
 });
 
-app.get('/lighton', function(req,res) {
-    led.on();
+app.get('/motoron', function(req,res) {
+    motor.start();
     console.log("on")
 });
 
-app.get('/lightoff', function(req,res) {
-    led.off();
+app.get('/motoroff', function(req,res) {
+    motor.stop();
     console.log("off")
 });
 
