@@ -3,7 +3,7 @@ $("#leftButton").live("vmousedown",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorLeftOn',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -12,7 +12,7 @@ $("#leftButton").live("vmouseup",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorLeftOff',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -21,7 +21,7 @@ $("#rightButton").live("vmousedown",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorRightOn',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -30,7 +30,7 @@ $("#rightButton").live("vmouseup",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorRightOff',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -39,7 +39,7 @@ $("#upButton").live("vmousedown",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorUpOn',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -48,7 +48,7 @@ $("#upButton").live("vmouseup",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorUpOff',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -57,7 +57,7 @@ $("#downButton").live("vmousedown",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorDownOn',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -66,7 +66,7 @@ $("#downButton").live("vmouseup",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/motorDownOff',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -75,7 +75,7 @@ $("#fireButton").live("vmousedown",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/fireOn',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 
@@ -84,7 +84,7 @@ $("#fireButton").live("vmouseup",function() {
 
     $.ajax({
         'url' : 'http://localhost:8000/fireOff',
-        'type' : 'GET'
+        'type' : 'PUT'
     });
 })
 

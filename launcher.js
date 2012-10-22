@@ -16,64 +16,64 @@ board.on("ready", function() {
     util.debug('Motor init');
 });
 
-app.get('/motorRightOn', function(req,res) {
+app.put('/motorRightOn', function(req,res) {
     motorRight.start();
     console.log("right on")
     res.send(200);
 });
 
-app.get('/motorRightOff', function(req,res) {
+app.put('/motorRightOff', function(req,res) {
     motorRight.stop();
     console.log("right off")
     res.send(200);
 });
 
-app.get('/motorLeftOn', function(req,res) {
+app.put('/motorLeftOn', function(req,res) {
     motorLeft.start();
     console.log("right on")
     res.send(200);
 });
 
-app.get('/motorLeftOff', function(req,res) {
+app.put('/motorLeftOff', function(req,res) {
     motorLeft.stop();
     console.log("right off")
     res.send(200);
 });
 
 
-app.get('/motorUpOn', function(req,res) {
+app.put('/motorUpOn', function(req,res) {
     motorUp.start();
     console.log("right on")
     res.send(200);
 });
 
-app.get('/motorUpOff', function(req,res) {
+app.put('/motorUpOff', function(req,res) {
     motorUp.stop();
     console.log("right off")
     res.send(200);
 });
 
 
-app.get('/motorDownOn', function(req,res) {
+app.put('/motorDownOn', function(req,res) {
     motorDown.start();
     console.log("right on")
     res.send(200);
 });
 
-app.get('/motorDownOff', function(req,res) {
+app.put('/motorDownOff', function(req,res) {
     motorDown.stop();
     console.log("right off")
     res.send(200);
 });
 
-app.get('/fireOn', function(req,res) {
+app.put('/fireOn', function(req,res) {
     fireMotor.start();
     console.log("fire on")
     res.send(200);
 
 });
 
-app.get('/fireOff', function(req,res) {
+app.put('/fireOff', function(req,res) {
     fireMotor.stop();
     console.log("fire Off")
     res.send(200);
